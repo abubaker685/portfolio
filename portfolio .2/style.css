@@ -1,0 +1,221 @@
+:root {
+    --sans: 'Oxygen', sans-serif; 
+    --black: #171321; 
+    --white: #ffffff; 
+    --Black: #171321;
+    --Dkblue: #0d314b;
+    --Plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #46fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: 'Oxygen mono', monospace;
+  }
+  
+  html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+color: var(--hotmag);
+text-decoration: none;
+}
+/* background color divs */
+.section-Plum {
+  background-color: var(--Plum);
+}
+.gradient {
+  background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134, 251, 251,1) 100%);
+  height: 2px;
+}
+/* intro section */
+
+#Intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#Intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#Intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+#Intro .name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+}
+
+#Intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+  
+/* contact section */
+
+#contact {
+  width: 400px;
+  text-align: center;
+  margin:0 auto;
+  padding: 3rem 0;
+}
+#contact p:last-child {
+  margin-left: 3rem;
+}
+  /*nav bar Section*/
+
+  nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+  }
+  
+  nav h1 a {
+    font-family: var(--sans);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  nav li:first-child {
+    flex-basis: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  
+  nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+  }
+  
+  nav h1 [class*="fa-"] {
+    font-size: 100%;
+    color: var(--aqua);
+  }
+  
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav a:hover,
+  nav [class*="fa-"]:hover {
+    color: var(--magenta);
+  }
+  
+  
+  .button {
+    background-color: var(--magenta);
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+  }
+  .button:hover {
+    color: var(--black);
+    background-color: var(--hotmag);
+  }
+  
+  @media (min-width: 850px) {
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+      
+    }
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+  }
+  
+  footer [class*="fa-"] {
+    font-size: 3rem;
+    color: var(--magenta);
+    transition: color 0.3s;
+    margin-right: 1rem; 
+  }
+  
+  footer [class*="fa-"]:last-child {
+    margin-right: 0;
+  }
+  
+  footer [class*="fa-"]:hover {
+    color: var(--magenta);
+  }
+  
+  @media (min-width: px) {
+    footer {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    footer li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
